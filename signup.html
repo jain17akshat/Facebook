@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Facebook - Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h2>Create Account</h2>
+      <form onsubmit="return createAccount(event)">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="password" id="password" placeholder="Password" required />
+        <input type="password" id="confirm" placeholder="Confirm Password" required />
+        <button type="submit">Sign Up</button>
+      </form>
+      <a href="index.html">Already have an account? Log in</a>
+    </div>
+  </div>
+
+  <script>
+    function createAccount(e) {
+      e.preventDefault();
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const password = document.getElementById("password").value;
+      const confirm = document.getElementById("confirm").value;
+
+      if (password !== confirm) {
+        alert("Passwords do not match!");
+        return false;
+      }
+
+      // Save credentials to localStorage
+      localStorage.setItem("fb_user_email", email);
+      localStorage.setItem("fb_user_password", password);
+      localStorage.setItem("fb_user_name", name);
+
+      alert("Account created! Please log in.");
+      window.location.href = "index.html"; // Redirect to login
+      return false;
+    }
+  </script>
+</body>
+</html>

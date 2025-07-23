@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Facebook - Log in</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <div class="login-box">
+      <h1>facebook</h1>
+<form onsubmit="return login(event)">
+    <input type="email" id="loginEmail" placeholder="Email" required />
+    <input type="password" id="loginPassword" placeholder="Password" required />
+    <button type="submit">Log In</button>
+  </form>
+  <a href="signup.html">Create New Account</a>
+  
+  <script>
+    function login(e) {
+      e.preventDefault();
+  
+      const email = document.getElementById("loginEmail").value;
+      const password = document.getElementById("loginPassword").value;
+  
+      const savedEmail = localStorage.getItem("fb_user_email");
+      const savedPassword = localStorage.getItem("fb_user_password");
+  
+      if (email === savedEmail && password === savedPassword) {
+        alert("Login successful!");
+        window.location.href = "home.html"; 
+      } else {
+        alert("Invalid email or password!");
+      }
+      return false;
+    }
+  </script>
+  
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
