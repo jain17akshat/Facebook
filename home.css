@@ -2,6 +2,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
 }
 
 body {
@@ -382,8 +387,11 @@ body {
   margin-bottom: 16px;
   overflow: hidden;
   gap: 10px;
-
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
 }
+
 
 .post-header {
   display: flex;
