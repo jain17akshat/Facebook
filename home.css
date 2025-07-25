@@ -718,3 +718,20 @@ body {
     height: 90px;
   }
 }
+/* Existing styles above this */
+
+/* Responsive styles for screens ≤ 400px */
+@media (max-width: 400px) {
+  .search-bar input {
+    width: 120px;
+  }
+
+  .story {
+    min-width: 80px;
+    height: 140px;
+  }
+
+  .story-image {
+    height: 90px;
+  }
+}
