@@ -386,12 +386,15 @@ body {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   margin-bottom: 16px;
   overflow: hidden;
-  gap: 10px;
-  padding: 10px;
+  padding: 12px;
   display: flex;
   flex-direction: column;
+  gap: 8px; /* Small gap between elements */
 }
 
+.post-text {
+  margin-bottom: 8px;
+}
 
 .post-header {
   display: flex;
@@ -444,8 +447,10 @@ body {
 
 .post-image {
   width: 100%;
-  height: 300px;
+  height: auto;
   margin: 0 -16px;
+  object-fit: cover;
+  border-radius: 6px;
   position: relative;
 }
 
