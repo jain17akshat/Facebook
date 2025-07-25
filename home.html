@@ -1,32 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Facebook - Home</title>
-  <link rel="stylesheet" href="home.css" />
-
-  
-   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook</title>
+    <link rel="stylesheet" href="home.css">
 </head>
-
 <body>
-  <header class="header">
-    <h2>facebook</h2>
-    <input type="text" placeholder="Search Facebook" />
-  </header>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-left">
+            <div class="logo">facebook</div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search Facebook">
+            </div>
+        </div>
+        
+        <div class="header-center">
+            <div class="nav-icons">
+                <div class="nav-icon active">🏠</div>
+                <div class="nav-icon">👥</div>
+                <div class="nav-icon">📺</div>
+                <div class="nav-icon">🏪</div>
+                <div class="nav-icon">👥</div>
+            </div>
+        </div>
+        
+        <div class="header-right">
+            <div class="profile-section">
+                <div class="profile-pic"></div>
+                <span>John Doe</span>
+            </div>
+            <div class="header-buttons">
+                <button class="header-btn">➕</button>
+                <button class="header-btn">💬</button>
+                <button class="header-btn">🔔</button>
+                <button class="header-btn">⚙️</button>
+            </div>
+        </div>
+    </header>
 
-  <main class="main-content">
-    <div class="post-box">
-      <textarea placeholder="What's on your mind?"></textarea>
-      <button>Post</button>
-    </div>
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Left Sidebar -->
+        <aside class="left-sidebar">
+            <div class="sidebar-item">
+                <div class="profile-pic small"></div>
+                <span>John Doe</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="icon">👥</span>
+                <span>Friends</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="icon">⏰</span>
+                <span>Memories</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="icon">📁</span>
+                <span>Saved</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="icon">👥</span>
+                <span>Groups</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="icon">📺</span>
+                <span>Video</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="icon">🏪</span>
+                <span>Marketplace</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="icon">📰</span>
+                <span>Feeds</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="icon">📅</span>
+                <span>Events</span>
+            </div>
+            <div class="sidebar-item">
+                <span class="icon">📄</span>
+                <span>Pages</span>
+            </div>
+        </aside>
 
-    <div class="feed">
-      <div class="post">User 1 posted something</div>
-      <div class="post">User 2 posted something</div>
-      <div class="post">User 3 posted something</div>
+        <!-- Center Feed -->
+        <main class="center-feed">
+            <!-- Create Post -->
+            <div class="create-post">
+                <div class="create-post-top">
+                    <div class="profile-pic small"></div>
+                    <input type="text" placeholder="What's on your mind, John?">
+                </div>
+                <div class="create-post-bottom">
+                    <div class="post-option">
+                        <span class="icon">📹</span>
+                        <span>Live video</span>
+                    </div>
+                    <div class="post-option">
+                        <span class="icon">📷</span>
+                        <span>Photo/video</span>
+                    </div>
+                    <div class="post-option">
+                        <span class="icon">😊</span>
+                        <span>Feeling/activity</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Stories -->
+            <div class="stories-container">
+                <div class="story create-story">
+                    <div class="story-image"></div>
+                    <div class="story-content">
+                        <div class="add-story-btn">+</div>
+                        <span>Create Story</span>
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="story-image"></div>
+                    <div class="story-profile"></div>
+                    <span  class="story-name">Sarah</span>
+                </div>
+                <div class="story">
+                    <div class="story-image"></div>
+                    <div class="story-profile"></div>
+                    <span class="story-name">Mike</span>
+                </div>
+                <div class="story">
+                    <div class="story-image"></div>
+                    <div class="story-profile"></div>
+                    <span class="story-name">Emma</span>
+                </div>
+                <div class="story">
+                    <div class="story-image"></div>
+                    <div class="story-profile"></div>
+                    <span class="story-name">David</span>
+                </div>
+                <div class="story">
+                  <div class="story-image"></div>
+                  <div class="story-profile"></div>
+                  <span class="story-name">David</span>
+              </div>
+
+                
+            </div>
+
+            <!-- Posts -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="profile-pic small"></div>
+                    <div class="post-info">
+                        <h4>Sarah Johnson</h4>
+                        <span class="post-time">2 hours ago</span>
+                    </div>
+                    <div class="post-options">⋯</div>
+                </div>
+                <div class="post-content">
+                    <p>Just had an amazing day at the beach! The weather was perfect and the sunset was breathtaking. Sometimes you just need to take a break and enjoy the simple things in life. 🌅</p>
+                    <div class="post-image"></div>
+                </div>
+                <div class="post-stats">
+                    <span>24 people like this</span>
+                    <span>5 comments</span>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn">Like</button>
+                    <button class="action-btn"> Comment</button>
+                    <button class="action-btn">↗ Share</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="profile-pic small"></div>
+                    <div class="post-info">
+                        <h4>Tech News Daily</h4>
+                        <span class="post-time">4 hours ago</span>
+                    </div>
+                    <div class="post-options">⋯</div>
+                </div>
+                <div class="post-content">
+                    <p>🚀 Breaking: New AI breakthrough announced! Scientists have developed a revolutionary machine learning algorithm that can process natural language with unprecedented accuracy.</p>
+                    <div class="post-image tech"></div>
+                </div>
+                <div class="post-stats">
+                    <span>🚀 156 people like this</span>
+                    <span>23 comments</span>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn"> Like</button>
+                    <button class="action-btn"> Comment</button>
+                    <button class="action-btn">↗Share</button>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-header">
+                    <div class="profile-pic small"></div>
+                    <div class="post-info">
+                        <h4>Mike Chen</h4>
+                        <span class="post-time">6 hours ago</span>
+                    </div>
+                    <div class="post-options">⋯</div>
+                </div>
+                <div class="post-content">
+                    <p>Cooking experiment of the day: homemade pasta with truffle sauce! 🍝 The kitchen smells incredible. Recipe in the comments for anyone interested!</p>
+                    <div class="post-image food"></div>
+                </div>
+                <div class="post-stats">
+                    <span>😋 89 people like this</span>
+                    <span>12 comments</span>
+                </div>
+                <div class="post-actions">
+                    <button class="action-btn">👍 Like</button>
+                    <button class="action-btn">💬 Comment</button>
+                    <button class="action-btn">↗️ Share</button>
+                </div>
+            </div>
+        </main>
+
+        
+            </div>
+        </aside>
     </div>
-  </main>
 </body>
 </html>
